@@ -3,7 +3,7 @@ from funciones.funciones import *
 import pandas as pd
 from funciones.funcionesCreditos import *
 
-df = pd.read_csv(r'D:\bootcamp\dsb06rt\mod5-machine-learning-y-deep-learning\29_11_2023\credit_risk.csv')
+df = pd.read_csv('data/credit_risk.csv')
 
 
 
