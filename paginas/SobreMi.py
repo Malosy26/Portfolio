@@ -8,7 +8,7 @@ def SobreMi():
     with colbeg1:
         st.markdown("<span style='display: block; text-align: left; font-size: 50px; font-weight: bold; margin: 0; padding-left: 0;'>SobreMi</span>", unsafe_allow_html=True)
     with colbeg3:
-        foto_dani = Image.open(r"D:\descargas chrome\foto_dani.png")
+        foto_dani = Image.open("imagenesSobreMi/foto_dani.png")
         st.image(foto_dani,width = 300)
     espacio(4)
     col1,col2,col3 = st.columns([0.5,0.85,1])
