@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 # Ruta de la carpeta que contiene las imágenes de las diapositivas
-ruta_carpeta = r"D:\bootcamp\Streamlit\Portafolio\imagenesGastronomia"
+ruta_carpeta = "imagenesGastronomia"
 
 # Crear una lista con las rutas de todas las imágenes de las diapositivas
-imagenes_diapositivas = [f"{ruta_carpeta}\\Diapositiva{i}.JPG" for i in range(1, 27)]
+imagenes_diapositivas = [f"{ruta_carpeta}\Diapositiva{i}.JPG" for i in range(1, 27)]
 
 # Función para cargar y mostrar la imagen
 def mostrar_diapositiva(indice):
