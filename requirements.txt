@@ -21,4 +21,8 @@ requests-toolbelt==1.0.0
 python-dateutil==2.8.2
 
 pandas==2.1.4
+scikit-image==0.20.0
+scikit-learn==1.2.2
+scikit-learn-intelex==20230426.121932
+seaborn==0.12.2
 
