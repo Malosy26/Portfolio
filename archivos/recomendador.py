@@ -56,14 +56,15 @@ def mostrar_recomendador():
  
     if "indice_diapositiva2" not in st.session_state:
         st.session_state.indice_diapositiva2 = 0
-
-    # Botón "Anterior"
-    if st.button("Anterior") and st.session_state.indice_diapositiva2 > 0:
-        st.session_state.indice_diapositiva2 -= 1
-
-    # Botón "Siguiente"
-    if st.button("Siguiente") and st.session_state.indice_diapositiva2 < len(imagenes_diapositivas) - 1:
-        st.session_state.indice_diapositiva2 += 1
+    col1,col2,col3 = st.columns([0.2,1.2,0.2])
+    with col1:
+        # Botón "Anterior"
+        if st.button("Anterior") and st.session_state.indice_diapositiva2 > 0:
+            st.session_state.indice_diapositiva2 -= 1
+    with col2:
+        # Botón "Siguiente"
+        if st.button("Siguiente") and st.session_state.indice_diapositiva2 < len(imagenes_diapositivas) - 1:
+            st.session_state.indice_diapositiva2 += 1
 
     # Mostrar la diapositiva actual
     mostrar_diapositiva(st.session_state.indice_diapositiva2)
