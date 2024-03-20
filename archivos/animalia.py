@@ -66,17 +66,17 @@ def mostrar_proyecto1():
     escribeTexto("Os muestro la presentación del trabajo realizado: ")
     espacio(3)
     
-  
+    col1,col2,col3 = st.columns([0,2,2,0,2])
     if "indice_diapositiva" not in st.session_state:
         st.session_state.indice_diapositiva = 0
-
-    # Botón "Anterior"
-    if st.button("Anterior") and st.session_state.indice_diapositiva > 0:
-        st.session_state.indice_diapositiva -= 1
-
-    # Botón "Siguiente"
-    if st.button("Siguiente") and st.session_state.indice_diapositiva < len(imagenes_diapositivas) - 1:
-        st.session_state.indice_diapositiva += 1
+    with col1:
+        # Botón "Anterior"
+        if st.button("Anterior") and st.session_state.indice_diapositiva > 0:
+            st.session_state.indice_diapositiva -= 1
+    with col3:
+        # Botón "Siguiente"
+        if st.button("Siguiente") and st.session_state.indice_diapositiva < len(imagenes_diapositivas) - 1:
+            st.session_state.indice_diapositiva += 1
 
     # Mostrar la diapositiva actual
     mostrar_diapositiva(st.session_state.indice_diapositiva)
