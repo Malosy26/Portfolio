@@ -11,7 +11,7 @@ def SobreMi():
         foto_python = Image.open("imagenesSobreMi/python.png")
         st.image(foto_python,width = 200)
     with colbeg2:
-        espacio(6)
+        espacio(9)
         foto_banner = Image.open("imagenesSobreMi/banner.png")
         st.image(foto_banner,use_column_width=True)
 
