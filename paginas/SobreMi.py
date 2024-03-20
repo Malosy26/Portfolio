@@ -112,7 +112,7 @@ def SobreMi():
         st.write("Pandas es una librería de Python que proporciona estructuras de datos potentes y flexibles diseñadas para trabajar con datos estructurados de manera eficiente.")
         espacio(4)
         st.write ("MySQL Connector es una librería de Python que permite a los programas de Python acceder a las bases de datos MySQL mediante una API que cumple con la especificación de la API de la base de datos de Python. ")
-        espacio(4)
+        espacio(5)
         st.write("PySpark es una biblioteca de Python que permite el procesamiento de grandes conjuntos de datos utilizando Apache Spark y su capacidad de computación distribuida.")
         espacio(4)
         st.write ("Scikit-learn (o sklearn) es una librería de Python que se utiliza ampliamente para el aprendizaje automático. Proporciona una variedad de algoritmos para modelos supervisados (como clasificación y regresión) y no supervisados (como clustering). Además, sklearn ofrece una serie de métricas para evaluar la precisión y el rendimiento de los modelos entrenados. También proporciona herramientas para el preprocesamiento de datos, la selección de características, y la optimización de parámetros, entre otras funcionalidades.") 
