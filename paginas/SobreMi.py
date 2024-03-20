@@ -10,10 +10,10 @@ def SobreMi():
         espacio(6)
         foto_python = Image.open("imagenesSobreMi/python.png")
         st.image(foto_python,width = 200)
-    with colbeg2:
-        espacio(9)
-        foto_banner = Image.open("imagenesSobreMi/banner.png")
-        st.image(foto_banner,use_column_width=True)
+    # with colbeg2:
+    #     espacio(9)
+    #     foto_banner = Image.open("imagenesSobreMi/banner.png")
+    #     st.image(foto_banner,use_column_width=True)
 
     with colbeg3:
         foto_dani = Image.open("imagenesSobreMi/foto_dani.png")
