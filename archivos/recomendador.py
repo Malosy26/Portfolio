@@ -61,7 +61,7 @@ def mostrar_recomendador():
         # Botón "Anterior"
         if st.button("Anterior") and st.session_state.indice_diapositiva2 > 0:
             st.session_state.indice_diapositiva2 -= 1
-    with col2:
+    with col3:
         # Botón "Siguiente"
         if st.button("Siguiente") and st.session_state.indice_diapositiva2 < len(imagenes_diapositivas) - 1:
             st.session_state.indice_diapositiva2 += 1
