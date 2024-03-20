@@ -66,7 +66,7 @@ def mostrar_proyecto1():
     escribeTexto("Os muestro la presentación del trabajo realizado: ")
     espacio(3)
     
-    col1,col2,col3 = st.columns([0,2,2,0,2])
+    col1,col2,col3 = st.columns([0,2,1,0,2])
     if "indice_diapositiva" not in st.session_state:
         st.session_state.indice_diapositiva = 0
     with col1:
