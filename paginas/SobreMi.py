@@ -79,9 +79,9 @@ def SobreMi():
     espacio(10)
     st.markdown("<span style='display: block; text-align: center; font-size: 30px; font-weight: bold; margin: 0; padding-left: 0;'>Librerías de Python con las que tengo experiencia</span>", unsafe_allow_html=True)
     espacio(4)
-    col5,col6 = st.columns(2)
+    col5,col6,col7 = st.columns(3)
     
-    with col5:
+    with col6:
         foto_machine_learning = Image.open("imagenesSobreMi/Beutiful1.png")
         st.image(foto_machine_learning,width = 200)
         espacio(1)
@@ -93,7 +93,7 @@ def SobreMi():
         espacio(1)
         foto_tf = Image.open("imagenesSobreMi/tensorflow1.png")
         st.image(foto_tf,width = 200)
-    with col6: 
+    with col7: 
         foto_numpy = Image.open("imagenesSobreMi/numpy.png")
         st.image(foto_numpy,width = 200)
         espacio(1)
