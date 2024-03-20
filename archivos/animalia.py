@@ -65,21 +65,22 @@ def mostrar_proyecto1():
     # st.markdown(link, unsafe_allow_html=True)
     escribeTexto("Os muestro la presentación del trabajo realizado: ")
     espacio(3)
-    # Variable para almacenar el índice de la diapositiva actual
-    if "indice_diapositiva2" not in st.session_state:
-        st.session_state.indice_diapositiva2 = 0
+    
+  
+    if "indice_diapositiva" not in st.session_state:
+        st.session_state.indice_diapositiva = 0
 
     # Botón "Anterior"
-    if st.button("Anterior") and st.session_state.indice_diapositiva2 > 0:
-        st.session_state.indice_diapositiva2 -= 1
+    if st.button("Anterior") and st.session_state.indice_diapositiva > 0:
+        st.session_state.indice_diapositiva -= 1
 
     # Botón "Siguiente"
-    if st.button("Siguiente") and st.session_state.indice_diapositiva2 < len(imagenes_diapositivas) - 1:
-        st.session_state.indice_diapositiva2 += 1
+    if st.button("Siguiente") and st.session_state.indice_diapositiva < len(imagenes_diapositivas) - 1:
+        st.session_state.indice_diapositiva += 1
 
     # Mostrar la diapositiva actual
-    mostrar_diapositiva(st.session_state.indice_diapositiva2)
-  
+    mostrar_diapositiva(st.session_state.indice_diapositiva)
+
 
 
 
