@@ -13,7 +13,7 @@ def SobreMi():
     with colbeg2:
         espacio(9)
         foto_st = Image.open("imagenesSobreMi/streamlit.png")
-        st.image(foto_st,use_column_width=True)
+        st.image(foto_st,width=200)
 
     with colbeg3:
         foto_dani = Image.open("imagenesSobreMi/foto_dani.png")
